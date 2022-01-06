@@ -7,37 +7,8 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'connect4'",
-            "cargo": {
-                "args": [
-                    "build",
-                    "--bin=connect4",
-                    "--package=connect4"
-                ],
-                "filter": {
-                    "name": "connect4",
-                    "kind": "bin"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug unit tests in executable 'connect4'",
-            "cargo": {
-                "args": [
-                    "test",
-                    "--no-run",
-                    "--bin=connect4",
-                    "--package=connect4"
-                ],
-                "filter": {
-                    "name": "connect4",
-                    "kind": "bin"
-                }
-            },
+            "name": "Debug",
+            "program": "${workspaceFolder}/<your program>",
             "args": [],
             "cwd": "${workspaceFolder}"
         }

@@ -1,5 +1,5 @@
 [package]
-name = "connect4"
+name = "connect4solver"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,3 +8,8 @@ edition = "2021"
 [dependencies]
 numtoa = "0.2.4"
 rayon = "1.5.1"
+bytes = "1"
+
+
+[profile.test] 
+opt-level = 3
